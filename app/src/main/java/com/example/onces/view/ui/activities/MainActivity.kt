@@ -20,8 +20,9 @@ class MainActivity : AppCompatActivity() {
         binding.animationView.playAnimation()
 
         handler= Handler(Looper.myLooper()!!)
-        handler.postDelayed({
-            var intent=Intent(this, LoginActivity::class.java)
+        handler.postDelayed(
+            {
+            val intent= Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }, 9000)
